@@ -723,3 +723,47 @@ ul {
     font-size: var(--font-size-sm);
     color: rgba(255, 255, 255, 0.6);
 }
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* show original SVG colors */
+    border-radius: 50%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    z-index: calc(var(--z-fixed) + 10);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), opacity var(--transition-fast);
+    opacity: 1;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Removed blue blob per user request - keep a simple green WhatsApp circle on the right */
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 420px) {
+    .whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        width: 50px;
+        height: 50px;
+    }
+}

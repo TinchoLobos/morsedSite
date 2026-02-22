@@ -240,3 +240,28 @@ navActiveStyle.textContent = `
     }
 `;
 document.head.appendChild(navActiveStyle);
+
+// Floating WhatsApp button: helper to set message dynamically
+(function() {
+    const waAnchor = document.getElementById('whatsapp-float');
+    if (!waAnchor) return;
+
+    function setWhatsAppMessage(msg) {
+        if (!msg) return;
+        const base = 'https://wa.me/?text=';
+        waAnchor.href = base + encodeURIComponent(msg);
+        waAnchor.setAttribute('data-message', msg);
+    }
+
+    // If an initial message is present as data attribute, use it
+    const initial = waAnchor.getAttribute('data-message');
+    if (initial) {
+        setWhatsAppMessage(initial);
+    } else {
+        // sensible default until user provides exact text
+        setWhatsAppMessage('Hola, quisiera más información sobre sus planes.');
+    }
+
+    // Expose setter globally so the user can call `setWhatsAppMessage(...)` later
+    window.setWhatsAppMessage = setWhatsAppMessage;
+})();
