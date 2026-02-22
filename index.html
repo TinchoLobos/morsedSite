@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Morsed Asesores - Los mejores planes de salud. Podés acceder a la mejor cotización para tu prepaga siguiendo 3 simples pasos.">
+    <title>Morsed Asesores - Los mejores planes de salud</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#inicio" class="logo">
+                    <img src="assets/images/logo-morsed.svg" alt="Morsed Asesores" width="180" height="40">
+                </a>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                        <li><a href="#prepagas" class="nav-link">Prepagas</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="#contacto" class="btn btn-primary">Solicitar asesoría</a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Descubrí y cotizá<br>
+                        <span class="highlight">la cobertura ideal</span><br>
+                        según tus necesidades
+                    </h1>
+                    <div class="hero-stats">
+                        <span class="stats-number">+ 1000</span>
+                        <span class="stats-label">Afiliados<br>CONFIARON EN NOSOTROS</span>
+                    </div>
+                </div>
+                
+                <div class="hero-process">
+                    <h2 class="process-title">¿Cómo acceder a tu cotización?</h2>
+                    <p class="process-subtitle">FÁCIL Y RÁPIDO</p>
+                    
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3 class="step-title">Ingresá tus Datos de Contacto</h3>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3 class="step-title">Elegimos juntos el mejor plan para vos</h3>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3 class="step-title">Obtenés el alta de forma inmediata</h3>
+                        </div>
+                    </div>
+                    
+                    <a href="#prepagas" class="btn btn-primary btn-large">Ver prepagas disponibles</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-divider">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L48 110C96 100 192 80 288 70C384 60 480 60 576 65C672 70 768 80 864 85C960 90 1056 90 1152 90C1248 90 1344 90 1392 90L1440 90V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Providers Section -->
+    <section class="providers" id="prepagas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Encontrá tu prepaga</h2>
+                <p class="section-subtitle">Compará los mejores planes de las principales empresas de salud del país</p>
+            </div>
+            
+            <!-- Provider Tabs -->
+            <div class="provider-tabs">
+                <button class="tab-btn active" data-provider="galeno">
+                    <img src="assets/images/providers/galeno-logo-color.png" alt="Galeno" class="tab-logo">
+                </button>
+                <button class="tab-btn" data-provider="sancor">
+                    <img src="assets/images/providers/sancor-logo-color.png" alt="Sancor Salud" class="tab-logo">
+                </button>
+                <button class="tab-btn" data-provider="prevencion">
+                    <img src="assets/images/providers/prevencion-logo-color.png" alt="Prevención Salud" class="tab-logo">
+                </button>
+                <button class="tab-btn" data-provider="avalian">
+                    <img src="assets/images/providers/avalian-logo-color.png" alt="Avalian" class="tab-logo">
+                </button>
+                <button class="tab-btn" data-provider="swiss">
+                    <img src="assets/images/providers/swissmedical-logo-color.png" alt="Swiss Medical" class="tab-logo">
+                </button>
+                <button class="tab-btn" data-provider="osde">
+                    <img src="assets/images/providers/osde-logo-color.png" alt="OSDE" class="tab-logo" style="max-height: 30px; width: auto;">
+                </button>
+            </div>
+            
+            <!-- Provider Content -->
+            <div class="provider-content">
+                <!-- Galeno -->
+                <div class="provider-panel active" data-provider="galeno">
+                    <div class="provider-hero">
+                        <div class="provider-info">
+                            <img src="assets/images/providers/galeno-logo-color.png" alt="Galeno" class="provider-logo">
+                            <h3 class="provider-headline">Más de 40 años de liderazgo en medicina privada</h3>
+                            <p class="provider-description">Galeno fue fundada en 1985 por el médico Julio Fraomeni. Es la única empresa de Argentina que cuenta con la mayor infraestructura sanatorial propia, destacándose por los Sanatorios de la Trinidad. Con más de 40 años de trayectoria, ha recibido la calificación máxima "con Mérito" del ITAES.</p>
+                        </div>
+                    </div>
+
+                    <div class="plans-grid">
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan 100</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura completa básica</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a sanatorios propios</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Planes familiares disponibles</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Emergencias 24hs</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Ideal para grupos familiares</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan 200</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura completa sin reintegros</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a Sanatorios de la Trinidad</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Oftalmología: Cirugía refractiva incluida</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Plan familiar disponible</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Más accesible del portfolio</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan 220</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Consultas médicas sin cargo e ilimitadas</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Emergencias 24hs sin cargo</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Kinesiología: 45 sesiones sin cargo</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Odontología cobertura 100%</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Asistencia al viajero regional e internacional</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan 3000</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura con reintegros</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Habitación individual</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a cirugías</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Mayor cartilla de prestadores</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura nacional</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan 4500</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Habitación individual</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a cirugías incluidas</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura odontológica completa</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura nacional completa</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a todos los sanatorios propios</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sancor Salud -->
+                <div class="provider-panel" data-provider="sancor">
+                    <div class="provider-hero">
+                        <div class="provider-info">
+                            <img src="assets/images/providers/sancor-logo-color.png" alt="Sancor Salud" class="provider-logo">
+                            <h3 class="provider-headline">Más de 50 años cuidando a las familias argentinas</h3>
+                            <p class="provider-description">Sancor Salud nació en 1973 en Sunchales, Santa Fe, como Asociación Mutual SanCor. Con más de 50 años de trayectoria, se consolidó como uno de los principales grupos de medicina prepaga de capital nacional, manteniendo sus valores mutualistas y solidarios desde sus orígenes.</p>
+                        </div>
+                    </div>
+
+                    <div class="plans-grid">
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan F800</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Plan básico con cobertura esencial</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura nacional</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a principales sanatorios</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Incluye el Programa Médico Obligatorio</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Ideal para jóvenes y familias</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan 1000</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Estudios sin cargo y sin límite</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Asistencia al viajero</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Turnos sin topes</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Habitación individual</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura nacional</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan 1500</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Suite en internación</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Órtesis y prótesis</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Seguro de vida</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura internacional</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura completa premium</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan 1500B</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Internación completa</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Habitación individual</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Medicamentos incluidos</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cirugías sin copago</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Médico online 24hs</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan 3000</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura ambulatoria completa</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Estudios sin límite</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Guardia permanente</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Médicos a domicilio</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura nacional amplia</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan 4500</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Estudios sin cargo y sin límite</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Asistencia al viajero</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Suite en internación</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura internacional</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Más de 150 mil prestadores</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Prevención Salud -->
+                <div class="provider-panel" data-provider="prevencion">
+                    <div class="provider-hero">
+                        <div class="provider-info">
+                            <img src="assets/images/providers/prevencion-logo-color.png" alt="Prevención Salud" class="provider-logo">
+                            <h3 class="provider-headline">La prepaga del Grupo Sancor Seguros con más de 75 años de respaldo</h3>
+                            <p class="provider-description">Prevención Salud fue presentada en 2013 y comenzó operaciones en marzo de 2014. A pesar de ser la prepaga más joven del mercado, cuenta con el respaldo de Sancor Seguros, líder asegurador con más de 75 años de trayectoria. Es la única prepaga nativa digital del país, con más de 340 mil afiliados.</p>
+                        </div>
+                    </div>
+
+                    <div class="plans-grid">
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan A1</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura esencial a precio conveniente</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Consultorio médico virtual</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura ambulatoria</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Incluye el Programa Médico Obligatorio</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Ideal para jóvenes y primer afiliación</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan A2</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Reintegros superadores</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Habitación individual</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura del 40% en farmacias</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Internación completa</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Maternidad completa</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan A4</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cartilla de prestadores de prestigio nacional</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Amplio vademécum</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Reintegros superadores</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a cirugía estética</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura completa nacional</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan A5</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cirugía estética y refractiva</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Habitación VIP</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Ecografía 3D, 4D o 5D</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> 50% de descuento en vademécum</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Reintegros superadores máximos</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan Joven (18-25 años)</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Adaptado a necesidades de jóvenes</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Precios diferenciales especiales</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura completa</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Incluye el Programa Médico Obligatorio</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Ideal para primer afiliación</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Avalian -->
+                <div class="provider-panel" data-provider="avalian">
+                    <div class="provider-hero">
+                        <div class="provider-info">
+                            <img src="assets/images/providers/avalian-logo-color.png" alt="Avalian" class="provider-logo">
+                            <h3 class="provider-headline">Más de 45 años de experiencia cooperativa cuidando tu salud</h3>
+                            <p class="provider-description">Avalian nació hace más de 45 años como AcaSalud para cuidar la salud del productor agropecuario. En octubre de 2020, evolucionó manteniendo los mismos principios cooperativos. Es parte de un grupo asociativo conformado por la ACA, Grupo Asegurador La Segunda, Coovaeco Turismo y Fundación Nodos. Actualmente cuenta con más de 146.000 asociados.</p>
+                        </div>
+                    </div>
+
+                    <div class="plans-grid">
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan Avalian 200</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Atención domiciliaria</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Descuentos farmacias 38%</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Internación completa</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Red de +6.500 prestadores</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Emergencias médicas 24/7</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan Avalian 300</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Medicina preventiva</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Estudios de diagnóstico</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Habitación privada</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura odontológica</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Mayor cartilla de especialistas</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan Avalian Corporativo</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Soluciones integrales para empresas</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura médica + seguros</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Gestión compartida de servicios</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Centros médicos prestigiosos</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Optimización de recursos</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Swiss Medical -->
+                <div class="provider-panel" data-provider="swiss">
+                    <div class="provider-hero">
+                        <div class="provider-info">
+                            <img src="assets/images/providers/swissmedical-logo-color.png" alt="Swiss Medical" class="provider-logo">
+                            <h3 class="provider-headline">Pioneros en calidad médica desde 1989, con más de 900.000 asociados</h3>
+                            <p class="provider-description">Swiss Medical Group nació en 1989 con la construcción de la Clínica y Maternidad Suizo Argentina, revolucionando el sistema de salud argentino. En 1994 creó Swiss Medical Medicina Privada, convirtiéndose en uno de los grupos empresarios más importantes del país. Cuenta con más de 20 centros médicos propios y una red premium de prestadores.</p>
+                        </div>
+                    </div>
+
+                    <div class="plans-grid">
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan S</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Reintegro en ortodoncia</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> 100% cobertura en internación</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> E-consultas ilimitadas</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> +30 especialidades</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> 40% descuento en farmacias</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan SMG 20</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Medicina domiciliaria</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Descuentos en farmacias 40%</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura odontológica básica</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Internación sin límites</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Red premium de prestadores</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan SMG 30</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Programas de maternidad</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Reintegros 100% en red</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Odontología completa incluida</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Mayor red de especialistas</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura internacional básica</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan SMG 40/50</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Suite premium en internación</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura internacional completa</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cirugías estéticas incluidas</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Máximos reintegros</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Atención VIP personalizada</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- OSDE -->
+                <div class="provider-panel" data-provider="osde">
+                    <div class="provider-hero">
+                        <div class="provider-info">
+                            <img src="assets/images/providers/osde-logo-color.png" alt="OSDE" class="provider-logo">
+                            <h3 class="provider-headline">Líderes del mercado con más de 50 años y 2 millones de socios</h3>
+                            <p class="provider-description">OSDE (Organización de Servicios Directos Empresarios) fue creada en 1972 por empresarios vinculados a la Unión Industrial Argentina. En 1991 fue pionera en crear la primera red de servicios médico-asistenciales de Argentina con planes abiertos. Con más de 50 años de trayectoria, es líder del mercado con más de 2 millones de afiliados y 380 Centros de Atención Personalizada distribuidos en todo el país.</p>
+                        </div>
+                    </div>
+
+                    <div class="plans-grid">
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan OSDE 210</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Plan más popular (70% de socios)</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura completa</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Libre elección de médicos y centros</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Amplia red de prestadores</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Precios con o sin aportes</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan OSDE 310</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura superior al 210</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Mayores reintegros</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a sanatorios premium</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Internación sin límites</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura nacional completa</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan OSDE 410</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura completa nacional</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Internación sin límites</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cirugías estéticas incluidas</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Mayores reintegros que el 310</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Libre elección de prestadores</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan OSDE 450</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Suite en internación</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura internacional</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Reintegros superadores</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a todos los prestadores</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Plan Flux para jóvenes 18-27</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan OSDE 510</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Plan más completo de OSDE</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura VIP premium</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a todos los prestadores</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Reintegros máximos</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Suite de lujo en internación</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan Flux (18-27 años)</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> OSDE Neo para jóvenes</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Descuentos especiales por edad</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Misma cobertura de planes superiores</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Precios diferenciales</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Libre elección de médicos</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+
+                        <div class="plan-card">
+                            <h4 class="plan-name">Plan Joven OSDE (28-35 años)</h4>
+                            <ul class="plan-features">
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Descuento especial por edad</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Cobertura completa</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Precios diferenciales</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Segmento joven preferencial</li>
+                                <li><img src="assets/images/icons/checkmark.svg" alt="" class="feature-icon"> Acceso a toda la red</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué contratar a través de un broker?</h2>
+                <p class="section-subtitle">TU cobertura: EN LAS MEJORES MANOS</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Asesoramiento personalizado</h3>
+                    <p class="benefit-description">Te ayudamos a elegir el plan que mejor se adapte a tus necesidades y presupuesto.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Acceso a múltiples opciones</h3>
+                    <p class="benefit-description">Comparás entre las mejores prepagas del mercado en un solo lugar.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Ahorro y optimización</h3>
+                    <p class="benefit-description">Conseguís los mejores precios y descuentos exclusivos disponibles.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Guía en trámites y gestiones</h3>
+                    <p class="benefit-description">Te acompañamos en todo el proceso, desde la cotización hasta el alta definitiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Contactanos</h2>
+                    <p class="contact-description">Dejanos tus datos y un asesor se comunicará con vos a la brevedad.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Teléfono</span>
+                                <p class="contact-value">[Número de contacto]</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <p class="contact-value">[email@ejemplo.com]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <script src="https://js.hsforms.net/forms/embed/50785211.js" defer></script>
+                    <div class="hs-form-frame" data-region="na1" data-form-id="e967431d-4080-4fb5-ab7a-99f24b799a51" data-portal-id="50785211"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-morsed.svg" alt="Morsed Asesores" width="150" height="35">
+                    <p class="footer-tagline">Los mejores planes de salud</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Morsed Asesores. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tabs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
