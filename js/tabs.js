@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Tab click handler
     tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
             const provider = this.getAttribute('data-provider');
             
             // Remove active class from all tabs
@@ -39,13 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
             if (selectedPanel) {
                 selectedPanel.classList.add('active');
                 selectedPanel.setAttribute('aria-hidden', 'false');
-                
-                // Scroll to panel on mobile
+                // On mobile, scroll the tabs container into view so the user sees the tabs
                 if (window.innerWidth <= 768) {
-                    selectedPanel.scrollIntoView({ 
-                        behavior: 'smooth', 
-                        block: 'nearest' 
-                    });
+                    const tabsEl = document.querySelector('.provider-tabs');
+                    if (tabsEl) {
+                        tabsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
                 }
             }
         });
